@@ -11,9 +11,11 @@ driver.maximize_window()
 
 driver.get("http://uitestingplayground.com/classattr")
 
-serch_locator = "#//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]"
+serch_locator = "button.btn.class2.btn-primary.btn-test"
 serch_input = driver.find_element(By.CSS_SELECTOR, serch_locator)
 
 serch_input.send_keys(Keys.RETURN)
 
 sleep(50)
+
+driver.quit()

@@ -23,3 +23,4 @@ serch_input.send_keys(Keys.RETURN)
 serch_input.send_keys(Keys.RETURN)
 
 sleep(50)
+driver.quit()

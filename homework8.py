@@ -11,8 +11,8 @@ driver.maximize_window()
 
 driver.get(" http://the-internet.herokuapp.com/login")
 
-search_locator = "#username"
-serch_input = driver.find_element(By.CSS_SELECTOR, search_locator)
+username_locator = "#username"
+serch_input = driver.find_element(By.CSS_SELECTOR, username_locator)
 serch_input.send_keys("tomsmith")
 
 passworf_locator = '#password'
